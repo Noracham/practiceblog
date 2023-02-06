@@ -6,4 +6,4 @@ function my_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
-add_theme_support('post-thumbnails', array('post', 'page'));
+add_theme_support('post-thumbnails');

@@ -15,7 +15,7 @@
                         <li><?php the_time("Y/m/d"); ?></li>
                         <li><?php echo $catname; ?></li>
                     </ul>
-                    <a href="<?php the_permalink(); ?>"><?php get_the_post_thumbnail(); ?></a>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                     <div class="text">
                         <?php
                         if (mb_strlen(strip_tags(get_the_content()), 'utf-8') > 80) {

@@ -147,13 +147,40 @@ li {
   justify-content: space-between;
   padding-top: 150px;
   margin-bottom: 60px;
+  @include m.mq(tab) {
+    flex-direction: column;
+    padding-top: 140px;
+  }
 }
 main {
   width: 65%;
+  @include m.mq(tab) {
+    width: 100%;
+    margin-bottom: 80px;
+  }
   article {
     margin-bottom: 80px;
     img {
       height: auto;
+    }
+  }
+  .article-title {
+    font-size: 1.5rem;
+    margin: 10px 0 15px 0;
+  }
+  .meta {
+    display: flex;
+    justify-self: flex-start;
+    margin-bottom: 10px;
+    li {
+      font-size: 0.875rem;
+      margin-right: 20px;
+    }
+    .text {
+      padding: 10px 40px 30px 40px;
+      @include m.mq(tab) {
+        padding: 10px 0;
+      }
     }
   }
 }
