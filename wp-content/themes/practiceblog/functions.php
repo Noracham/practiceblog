@@ -57,6 +57,10 @@ function mytheme_widgets_init()
     register_sidebar(array(
         'name' => 'サイドバー',
         'id' => 'sidebar',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="side-title">',
+        'after_title' => '</h3>',
     ));
 }
 add_action('widgets_init', 'mytheme_widgets_init');
