@@ -25,8 +25,8 @@
             <ul class="wrapper">
                 <li><a href="<?php echo esc_url(home_url('/category/news/')); ?>">NEWS</a></li>
                 <li><a href="<?php echo esc_url(home_url('/category/column/')); ?>">COLUMN</a></li>
-                <li><a href="<?php echo esc_url(home_url('/category/hotel/')); ?>">hotel</a></li>
-                <li><a href="<?php echo esc_url(home_url('/category/contact/')); ?>">CONTACT</a></li>
+                <li><a href="<?php echo esc_url(home_url('/category/hotel/')); ?>">HOTEL</a></li>
+                <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">CONTACT</a></li>
             </ul>
         </nav>
     </header>
