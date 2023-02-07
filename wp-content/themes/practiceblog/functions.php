@@ -64,3 +64,14 @@ function mytheme_widgets_init()
     ));
 }
 add_action('widgets_init', 'mytheme_widgets_init');
+
+
+
+function search_filter($query)
+{
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'search_filter');
